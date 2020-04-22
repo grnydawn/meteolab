@@ -6,7 +6,7 @@ def main():
     from meteolab.main import Meteolab as mlab
 
     console_scripts = ["meteolab=meteolab.__main__:main"]
-    install_requires = ["microapp>=0.1.7"]
+    install_requires = ["microapp>=0.1.8"]
 
     setup(
         name=mlab._name_,
