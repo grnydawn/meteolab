@@ -59,14 +59,14 @@ lint: ## check style with flake8
 	flake8 ${NAME} tests
 
 test: ## run tests quickly with the default Python
-	pytest tests -v --pyargs fortlab
+	pytest tests -v --pyargs meteolab
 
 test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
 	#coverage run --source ${NAME} -m unittest
-	coverage run --source ${NAME} pytest --pyargs fortlab
+	coverage run --source ${NAME} pytest --pyargs meteolab
 	coverage report -m
 	#coverage html
 	#$(BROWSER) htmlcov/index.html
