@@ -2,7 +2,8 @@
 
 def main():
     from meteolab import Meteolab
-    return Meteolab().main()
+    ret, fwds = Meteolab().run_command()
+    return ret
 
 if __name__ == "__main__":
     main()
